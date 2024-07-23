@@ -7,6 +7,7 @@ import { DownloadItem, getDownloadItems } from "@/modules/storage";
 
 export default function TabTwoScreen() {
   const [songs, setSongs] = useState<DownloadItem[]>([]);
+
   useEffect(() => {
     fetchData();
   }, []);
